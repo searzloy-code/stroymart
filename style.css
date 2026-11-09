@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+#header {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ff6b00;
+    color: #222;
+}

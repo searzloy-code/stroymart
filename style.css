@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #a8a8a8;
 }
 
 #header {
@@ -14,4 +14,73 @@ body {
     border-radius: 15px;
     background-color: #ff6b00;
     color: #222;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.cart-list {
+    margin-top: 20px;
+}
+
+.product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-price {
+    color: #ff6b00;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-add {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #ff6b00;
+}
+
+.cart-list li {
+    background: white;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #ff6b00;
+}
+
+section {
+    margin: 20px;
+    /* padding: 20px; */
+    border-radius: 15px;
+}
+
+.btn-delete {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
 }

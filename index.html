@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="header">
         <h2 class="title">МАГАЗИН КОМАНДЫШКО</h2>
@@ -15,6 +17,21 @@
         <button id="calc-btn">рассчитать стоимость</button>
         <div id="result">placeholder</div>
     </header>
-<script src="script.js"></script>
+
+    <section class="catalog-section">
+        <h2>КАТАЛОГ</h2>
+        <div id="products-container" class="products-grid">
+
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <h2>КОРЗИНА (<span id="cart-count">0</span>)</h2>
+        <ul id="cart-list" class="cart-list">
+
+        </ul>
+    </section>
+    <script src="script.js"></script>
 </body>
+
 </html>

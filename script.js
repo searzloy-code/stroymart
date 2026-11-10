@@ -8,13 +8,13 @@ function calculateMaterials() {
 
     let length = Number(document.getElementById('room-length').value)
     let width = Number(document.getElementById('room-width').value)
-    let price = Number(document.getElementById('room-price-per-m2').value)
+    let price = Number(document.getElementById('price-per-m2').value)
 
     if (length > 0 && width > 0 && price > 0) {
         let area = length * width * reserveMultiplier;
         let totalPrice = area * price;
 
-        let reserveToPercent = (reserveMultiplier - 1.0) * 10;
+        let reserveToPercent = (reserveMultiplier - 1.0) * 100;
 
         resultBox.innerHTML = `Необходимо материала (с запасом <b>${reserveToPercent.toFixed(0)}</b>%): <b>${area.toFixed(1)} кв. м.</b><br>
         Итоговая стоимость: <b>${Math.round(totalPrice)} руб.</b>`;
